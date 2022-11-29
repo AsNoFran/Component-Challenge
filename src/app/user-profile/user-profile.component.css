@@ -1,0 +1,18 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.identity {
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 0.5;
+}
+
+button {
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: sans-serif;
+}

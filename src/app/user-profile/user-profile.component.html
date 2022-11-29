@@ -1,0 +1,19 @@
+<body>
+  <div><img [src]="imageSrc" [alt]="name" /></div>
+
+  <section class="cardIdentity">
+    <div>
+      <p class="identity">Nom : {{ firstName }}</p>
+      <p class="identity">Prénom : {{ name }}</p>
+      <!-- age show/hide -->
+      <p class="identity" *ngIf="toDisplay">Mon age : {{ age }}</p>
+    </div>
+    <!-- Quote display to the Paragraphe -->
+    <div class="inputquote">
+      <p>{{ paragraphText }}</p>
+      <input type="text" [(ngModel)]="paragraphText" />
+    </div>
+  </section>
+  <!-- button show/hide age -->
+  <button (click)="cacheAge()">Afficher / Masquer mon âge</button>
+</body>
